@@ -1,0 +1,319 @@
+@import url('https://fonts.googleapis.com/css2?family=Mochiy+Pop+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dongle:wght@700&family=Mochiy+Pop+One&display=swap');
+*{
+    margin: 0 auto;
+    padding: 0;
+    box-sizing: border-box;
+}
+.mainmain{
+    width: 100%;
+    height: 100%;
+    padding-top: 10px;
+}
+.header{
+    width: 100%;
+    height: 100%;
+}
+.conteiner{
+    
+    width: 100%;
+    max-width: 1200px;
+}
+.header_inner{
+    width: 100%;
+    height: 100%;
+    -webkit-box-shadow: 0px 3px 24px 17px rgba(0,0,0,0.79); 
+    box-shadow: 0px 3px 24px 17px rgba(0,0,0,0.79);
+    border-radius: 30px;
+}
+.top{
+    width: 100%;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    border-bottom: 1px solid black;
+}
+.logo_top a{
+    text-decoration: none;
+    font-size: 40px;
+    color: rgb(219, 76, 10);
+    font-family: 'Mochiy Pop One', sans-serif;
+}
+.menu_top a{
+    text-decoration: none;
+    font-size: 34px;
+    color: black;
+    margin-right: 18px;
+    font-family: 'Dongle', sans-serif;
+    transition: all 0.5s;
+}
+.menu_top a:hover{
+    color: rgb(255, 0, 0);
+    border-bottom: 1px solid rgb(17, 0, 255);
+}
+.text_header{
+    width: 100%;
+    height: 90%;
+    text-align: center;
+    padding: 100px 0;
+}
+span{
+    color: rgb(0, 0, 0);
+}
+.text_header h1{
+    color: rgb(219, 76, 10);
+    font-size: 40px;
+    font-family: 'Mochiy Pop One', sans-serif;
+}
+.text_header p{
+    color: black;
+    font-size: 40px;
+    font-family: 'Dongle', sans-serif;
+}
+.header_knopka{
+    width: 100%;
+    height: 30%;
+    margin-top: 80px;
+}
+.knopka{
+    text-decoration: none;
+    border: 1px solid black;
+    padding: 15px  60px;
+    transition: all 0.8s;
+    background-color: rgba(0,0,0,0.79);
+    color: rgb(255, 255, 255);
+    border-radius: 15px;
+}
+.knopka:hover{
+    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(224,1,1,1) 100%, rgba(0,212,255,1) 100%);
+    color: white;
+    -webkit-box-shadow: 6px -5px 15px 5px #000000; 
+    box-shadow: 6px -5px 15px 5px #000000;
+}
+.main{
+    width: 100%;
+    height: 100%;
+    margin-top: 20px;
+}
+.main_inner{
+    width: 100%;
+    display: flex;
+    -webkit-box-shadow: 0px 3px 24px 17px rgba(0,0,0,0.79); 
+    box-shadow: 0px 3px 24px 17px rgba(0,0,0,0.79);
+    border-radius: 30px;
+    align-items: center;
+}
+.sidebar{
+    width: 30%;
+    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(224,1,1,1) 100%, rgba(0,212,255,1) 100%);
+    border-radius: 30px 0 0 30px;
+    margin-left: 0px;
+}
+.sidebar div{
+    width: 120px;
+     margin-top: 5%;
+     margin-left: 20%;
+     border-bottom: 2px solid black;
+}
+.a_box a{
+    text-decoration: none;
+    color: white;
+    font-size: 45px;
+    font-family: 'Dongle', sans-serif;
+}
+.content{
+    width: 60%;
+    height: 100%;
+    margin-top: 60px;
+    background-color: white;
+    display: flex;
+    align-items: center;
+}
+.info{
+    width: 90%;
+    height: 300px;
+    background-color: yellowgreen;
+    padding: 100px 80px;
+    border-radius: 30px;
+    background: url(./img/163052391483.jpg);
+}
+.knopka_2{
+    text-decoration: none;
+    border: 1px solid rgb(255, 255, 255);
+    padding: 15px  60px;
+    transition: all 0.8s;
+    color: rgb(255, 255, 255);
+    border-radius: 15px;
+    
+}
+.knopka_2:hover{
+    background: rgba(0, 0, 0, 0.568);
+    color: white;
+    -webkit-box-shadow: 6px -5px 15px 5px #ffffff; 
+    box-shadow: 6px -5px 15px 5px #ffffff;
+}
+input{
+    position: absolute;
+    left: 0;
+    top: -15px;
+}
+input::before{
+    content: "";
+    position: fixed;
+    background: url(./img/39f2bade-723c57083305190737254934fe2a4064.jpeg    ) no-repeat;
+    background-size: 200%;
+    width: 50px;
+    height: 50px;
+    border-radius: 20px;
+    border: 2px solid black;
+    top: 10px;
+    right: 13%;
+    cursor: pointer;
+}
+input:checked + .mainmain{
+    background: url(./img/outerspace-75.gif) no-repeat;
+    background-size: 100%;
+    background-position-y: center;
+    
+}
+input:checked + .mainmain .header .header_inner{
+    border: 3px solid white;
+    border-radius: 30px;
+    color: white;
+}
+input:checked + .mainmain .header .conteiner .header_inner .top .menu_top a{
+    color: white;
+}
+input:checked + .mainmain .header .conteiner .header_inner .text_header h1 span{
+    color: white;
+}
+input:checked + .mainmain .header .conteiner .header_inner .text_header p{
+    color: white;
+}
+input:checked + .mainmain .header .conteiner .header_inner .text_header .header_knopka a{
+    background-color: white;
+    color: black;
+}
+input:checked + .mainmain .header .conteiner .header_inner .top{
+    border-bottom: 2px solid white;
+}
+input:checked + .mainmain .header .conteiner .header_inner .text_header .header_knopka a:hover{
+    -webkit-box-shadow: 6px -5px 15px 5px #ffffff; 
+    box-shadow: 6px -5px 15px 5px #ffffff;
+}
+input:checked + .mainmain .main .conteiner{
+    border: 3px solid white;
+    border-radius: 30px;
+    color: white;
+}
+input:checked + .mainmain .main .conteiner .content {
+    background: none;
+}
+input:checked + .mainmain .header .conteiner .header_inner{
+    -webkit-box-shadow: 0px 3px 24px 17px rgba(255, 255, 255, 0.79); 
+    box-shadow: 0px 3px 24px 17px rgba(255, 255, 255, 0.79);
+    height: 530px;
+}
+input:checked + .mainmain .main .conteiner .main_inner{
+    -webkit-box-shadow: 0px 3px 24px 17px rgba(255, 255, 255, 0.79); 
+    box-shadow: 0px 3px 24px 17px rgba(255, 255, 255, 0.79);
+}
+input:checked + input::before{
+    border: 2px solid white;
+}
+input:checked + .mainmain .main .conteiner .main_inner .content .info{
+    background: url(./img/mlechnyj_put_zvezdnoe_nebo_zvezdy_128523_3840x2160.jpg) no-repeat;
+    background-size: 100%;
+    border: 2px solid white;
+}
+@media screen and (max-width:980px) 
+{
+    input:checked + .mainmain{
+        background: url(./img/outerspace-75.gif) no-repeat;
+        background-size: 150%;
+        background-position-y: center;
+        background-position-x: 45%;
+        
+    }
+    input:checked + .mainmain .main .conteiner .main_inner .content .info{
+        background: url(./img/mlechnyj_put_zvezdnoe_nebo_zvezdy_128523_3840x2160.jpg) no-repeat;
+        background-size: 150%;
+        background-position-y: center;
+        background-position-x: center;
+        border: 2px solid white;
+    }
+}
+@media screen and (max-width:733px) {
+    input:checked + .mainmain .main .conteiner .main_inner .content .info{
+        background: url(./img/mlechnyj_put_zvezdnoe_nebo_zvezdy_128523_3840x2160.jpg) no-repeat;
+        background-size: 150%;
+        background-position-y: center;
+        background-position-x: center;
+        border: 2px solid white;
+    }
+    
+}
+@media screen and (max-width:670px) {
+    input:checked + .mainmain{
+        background: url(./img/outerspace-75.gif) no-repeat;
+        background-size: 250%;
+        background-position-y: center;
+        background-position-x: 45%;
+        
+    }
+    input:checked + .mainmain .main .conteiner .main_inner .content .info{
+        background: url(./img/mlechnyj_put_zvezdnoe_nebo_zvezdy_128523_3840x2160.jpg) no-repeat;
+        background-size: 250%;
+        background-position-y: center;
+        background-position-x: center;
+        border: 2px solid white;
+    }
+    .menu_top a{
+        font-size: 22px;
+    }
+}
+@media screen and (max-width:390px) {
+    input:checked + .mainmain{
+        background: url(./img/outerspace-75.gif) no-repeat;
+        background-size: 300%;
+        background-position-y: center;
+        background-position-x: 45%;
+        
+    }
+    input:checked + .mainmain .main .conteiner .main_inner .content .info{
+        background: url(./img/mlechnyj_put_zvezdnoe_nebo_zvezdy_128523_3840x2160.jpg) no-repeat;
+        background-size: 320%;
+        background-position-y: center;
+        background-position-x: center;
+        border: 2px solid white;
+    }
+    .conteiner{
+        width: 85%;
+    }
+    .logo_top a{
+        margin-left: -5px;
+        font-size: 25px;
+    }
+    .menu_top{
+        margin-right: 0;
+        width: 200px;
+    }
+    .menu_top a{
+        font-size: 25px;
+    }
+    .knopka_2{
+        margin-left: -65px;
+    }
+    .a_box a{
+        font-size: 36px;
+    }
+    .sidebar{
+        width: 35%;
+        margin-top: 55px;
+        margin-left: 10px;
+    }
+    .info{
+        margin-right: 25px;
+    }
+}
